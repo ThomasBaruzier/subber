@@ -1,6 +1,6 @@
-# Subber : A Title/Subtitle Fetcher and Burner
+# Subber : Accurately fetching movie titles and subtitles before seamlessly burning them.
 
-Subber is a Bash script that fetches subtitles for a movie file and burns them into the video file. It also fetches the movie title by parsing the filename and querying the IMDb API. The subtitles are downloaded from the OpenSubtitles API and cleaned up. The cleaned subtitles are then burnt into the video file using ffmpeg.
+Subber is a Bash script designed to simplify the process of embedding subtitles into a movie file. It works by first extracting the movie title from the filename and then using the IMDb API to obtain additional information that will help find the correct subtitles. Subber then downloads the appropriate subtitles from the OpenSubtitles API and clean them. Finally, it uses ffmpeg to seamlessly burn the cleaned subtitles into the video file.
 
 ## Features
 
@@ -47,5 +47,5 @@ This script requires the following dependencies to be installed on your system:
 
 - The script uses the OpenSubtitles API to download subtitles. To use this API, you will need to obtain an API key from their website.
 - The script uses the IMDb API directly from the IMDB website. No API key is required (I hope this is that legal).
-- The script is designed to work with movies that have a filename in the format "movie_title.year.extension". If your movie filenames do not follow this format, the script may not work as expected. I have not tested movie shows.
+- The script is designed to work with movies that have a filename in the format  `<movie title> <year>.<ext>`. If your movie filenames do not follow this format, the script may not work as expected. Also, I have not tested movie shows or Anime.
 - The script is designed to download and burn subtitles in English and French. If you need subtitles in other languages, you will need to modify the script accordingly.
