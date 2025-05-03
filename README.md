@@ -1,3 +1,5 @@
+# Project is outdated, please do not use
+
 # Subber : Accurately fetching movie titles and subtitles before seamlessly burning them.
 
 Subber is a Bash script designed to simplify the process of embedding subtitles into a movie file. It works by first extracting the movie title from the filename and then using the IMDb API to obtain additional information that will help find the correct subtitles. Subber then downloads the appropriate subtitles from the OpenSubtitles API and clean them. Finally, it uses ffmpeg to seamlessly burn the cleaned subtitles into the video file.
